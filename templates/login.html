@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{ 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #111;
+            font-family: 'Courier New','monospace';
+            color: #ccc;
+            min-height: 100vh;
+            margin: 0;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            border: 1px white solid;
+            border-radius: 12px;
+        }
+        input{
+            background-color: #6f6f6f;
+            color: #ccc;
+            border: none;
+            border-bottom: 1px solid #444;
+            border-radius: 4px;
+            outline: none;
+            font-size: 16px;
+            margin-bottom: 10px;
+            width: 60%
+        }
+        button{
+            background-color: #6f6f6f;
+            border: none;
+            border-radius: 4px;
+            outline: none;
+            margin: 10px;
+            width: 60%;
+            color: #ccc;
+        }
+        button:hover {
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Administration Panel</h1><br>
+        <form action="/login" method="post">
+            <p>Login:</p>
+            <input type="text" name="username"><br>
+            <p>Username:</p>
+            <input type="password" name="password"><br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
